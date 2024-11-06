@@ -7,7 +7,7 @@ public class EagerInitializationSingleton {
     private EagerInitializationSingleton() {}
 
     public static EagerInitializationSingleton getInstance() {
-        return instance;
+       return instance;
     }
 
     /*
