@@ -6,6 +6,13 @@ public class EagerInitializationSingleton {
 
     private EagerInitializationSingleton() {}
 
+    /* Used tp prevent reflection breaking
+    private EagerInitializationSingleton() {
+        if(instance!=null) {
+            throw new RuntimeException("Cannot create new instance, please use getInstance ");
+        }
+    } */
+
     public static EagerInitializationSingleton getInstance() {
        return instance;
     }
